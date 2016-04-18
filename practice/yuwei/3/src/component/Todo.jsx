@@ -13,11 +13,14 @@ class Todo extends Component {
         return (
             <div>
                 <h1>TODO</h1>
-                <input value={this.state.inputText}
-                    onChange={this.onChange.bind(this)}
-                    onKeyDown={this.addItem.bind(this)}/>
+                <div className="wrapper">
+                    <input value={this.state.inputText}
+                        onChange={this.onChange.bind(this)}
+                        onKeyDown={this.addItem.bind(this)}/>
 
-                <TodoList items={this.state.items} changeItems={this.changeItems.bind(this)}/>
+                    <TodoList items={this.state.items} changeItems={this.changeItems.bind(this)}/>
+                </div>
+
             </div>
         )
     }

@@ -5,8 +5,7 @@ class TodoList extends Component {
     constructor(props) {
         super(props),
         this.state = {
-            editedIndex: -1,
-            isActive: false
+            editedIndex: -1
         }
     }
 
@@ -54,8 +53,7 @@ class TodoList extends Component {
 
     doubleClick(e){
         this.setState({
-            editedIndex: e.target.dataset.index,
-            isActive: true
+            editedIndex: e.target.dataset.index
         });
     }
 
@@ -69,8 +67,7 @@ class TodoList extends Component {
     keyDownChange(e){
         if(e.keyCode === 13){
             this.setState({
-                editedIndex: -1,
-                isActive: false
+                editedIndex: -1
             });
         }
     }

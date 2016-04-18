@@ -14,11 +14,19 @@ ul,input{
 
 li{
     background-color: #eee;
-    width: 10.7rem;
+    width: 100.7%;
     height: 1.8rem;
     line-height: 1.8rem;
     border: 1px #ebc4ff solid;
     border-top: 0;
+}
+
+.wrapper{
+    width: 11rem;
+}
+
+.wrapper input{
+    width: 100%;
 }
 
 .item{
@@ -53,7 +61,6 @@ lable{
     position: absolute;
     left: 0;
     top: 0.05rem;
-    width: 10.4rem;
     height: 1.4rem;
     display: none;
 }
